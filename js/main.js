@@ -41,6 +41,14 @@
         return false;
     });
 
+    // Form reset function
+    function resetForm(formId) {
+        var form = document.getElementById(formId);
+        if (form) {
+            form.reset();  // Reset the specific form
+        }
+    }
+
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
