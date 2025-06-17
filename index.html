@@ -123,7 +123,13 @@
     <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
         <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
             <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 display-4 text-uppercase text-white"><img src="./img/logo.png" alt="Your Logo" class="custom-logo" />QUALITY CONCRETE & LANDSCAPING</h1>
+                <h1 class="m-0 display-4 text-uppercase text-white">
+                    <img src="./img/logo.png" alt="Your Logo" class="custom-logo" />
+                    <!-- Full title for medium-small screens (≥ 428px) -->
+                    <span class="d-none d-sm-inline">QUALITY CONCRETE & LANDSCAPING</span>
+
+                    <!-- Short version for extra small screens (< 428px) -->
+                    <span class="d-inline d-sm-none">QUALITY CONCRETE</span></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="padding: 0.25rem 0.5rem; height: 30px; align-self: center; margin-top: auto; margin-bottom: auto;">
                 <span class="navbar-toggler-icon" style="width: 20px; height: 20px;"></span>
@@ -968,9 +974,27 @@
                 <p><i class="fa fa-envelope me-2"></i>qualityclservices@gmail.com</p>
             
                 <!-- Social Media Links -->
-                <div class="d-flex justify-content-start mt-4">
+                <!-- <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/share/1ACUHYUA9F/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/qualitycllandscaping/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-lg btn-success btn-lg-square rounded-0" href="https://wa.me/12038878462" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div> -->
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" 
+                    href="https://www.facebook.com/share/1ACUHYUA9F/?mibextid=wwXIfr" 
+                    target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" 
+                    href="https://www.instagram.com/qualitycllandscaping/" 
+                    target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-lg btn-success btn-lg-square rounded-0" 
+                    href="https://wa.me/12038878462" 
+                    target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
         </div>
