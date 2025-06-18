@@ -7,7 +7,26 @@
     <title>Quality Concrete & Landscaping | New Haven, CT Concrete & Landscaping Experts</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNTXF680S5"></script>
+    <!-- Google tag (gtag.js) -->
     <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // GA4 tracking
+    gtag('config', 'G-WNTXF680S5');
+
+    // Google Ads base tracking
+    gtag('config', 'AW-17088007011');
+
+    // 🔥 Calls from website tracking (this is what you asked about)
+    gtag('config', 'AW-17088007011/MhQ9CPvVzNMaEOOWmdQ_', {
+        'phone_conversion_number': '+1 (203) 887-8462'
+    });
+    </script>
+    
+
+    <!-- <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -15,13 +34,12 @@
     gtag('config', 'G-WNTXF680S5');
     gtag('config', 'AW-17088007011');
     </script>
-    
-    <!-- Event snippet for Contact conversion page -->
     <script>
-    gtag('event', 'conversion', {'send_to': 'AW-17088007011/-qbACI7N584aEOOWmdQ_'});
-    </script>
-
-    <!-- Google Tag Manager -->
+        gtag('config', 'AW-17088007011/MhQ9CPvVzNMaEOOWmdQ_', {
+            'phone_conversion_number': '+1 (203) 887-8462'
+        });
+    </script> -->
+    
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -87,7 +105,7 @@
                     <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold">Call Us</h6>
-                        <span>+1 (203) 887-8462</span>
+                        <a href="tel:12038878462" id="phone-number">+1 (203) 887-8462</a>
                     </div>
                 </div>
             </div>
@@ -102,7 +120,7 @@
                 <i class="bi bi-phone-vibrate text-primary me-2 fs-4"></i>
                 <div class="text-start">
                     <h6 class="text-uppercase fw-bold mb-1 fs-6">Call Us</h6>
-                    <span class="small">+1 (203) 887-8462</span>
+                    <a href="tel:12038878462" id="phone-number">+1 (203) 887-8462</a>
                 </div>
             </div>
 
@@ -978,7 +996,7 @@
                 <p>HELPFUL INFORMATION: </p>
                 <!-- Contact Information -->
                 <p><i class="fa fa-map-marker-alt me-2"></i>85 Monroe St, New Haven, CT 06513</p>
-                <p><i class="fa fa-phone-alt me-2"></i>+1 (203) 887-8462</p>
+                <a href="tel:12038878462" id="phone-number">+1 (203) 887-8462</a>
                 <p><i class="fa fa-envelope me-2"></i>qualityclservices@gmail.com</p>
             
                 <!-- Social Media Links -->
@@ -1040,6 +1058,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("form1");
+        if (form) {
+        form.addEventListener("submit", function () {
+            gtag('event', 'conversion', {
+            'send_to': 'AW-17088007011/-qbACI7N584aEOOWmdQ_'
+            });
+        });
+        }
+    });
+    </script>
 </body>
 
 </html>
